@@ -1,0 +1,23 @@
+server:
+  port: 8086
+  servlet:
+    context-path: /media-process
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:appdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: anypass
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+#  liquibase:
+#    change-log: classpath:database/schema.sql
+#  jmx:
+#    enabled: true
+  batch:
+    job:
+      enabled: false
+#    hadoop:
+#      fsUri: hdfs://borneo:8020
+#      resourceManagerHost: borneo
